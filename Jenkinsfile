@@ -1,7 +1,7 @@
-pipeline{
-    agent any
+node {
+
     def mvnHome = tool 'Maven3'
-    stages{
+    
         stage('Poll Config file changes from GitHub')
         {
             steps{
@@ -18,5 +18,4 @@ pipeline{
             }
         }
 
-    }
 }
