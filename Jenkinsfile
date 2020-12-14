@@ -56,7 +56,7 @@ pipeline{
                 //echo '=========================Response===================' + response
             }
         }
-        stage('Deploy')
+        stage('Deploy in ${env}')
         {
             steps{
                 rtServer (
